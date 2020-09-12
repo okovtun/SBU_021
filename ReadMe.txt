@@ -1,3 +1,13 @@
+https://github.com/okovtun/SBU_021
+
+
+2020-09-12 DATA TYPES
+TODO:
+1. Выучить теорию из конспекта, из файла DataTypes.docx;
+2. Решить все задачи:https://github.com/okovtun/SBU_021/blob/master/DataTypes/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%E2%84%962_2_%D0%A2%D0%B8%D0%BF%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85_%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5.pdf
+
+2020-09-05 INTRODUCTION
+DONE:
 Написать программу, которая выводит в окно консоли стишок "В Лесу родилась Ёлочка".
 Стишок должен быть выровнен по середине, куплеты должны быть разделены пустой строкой.
 
