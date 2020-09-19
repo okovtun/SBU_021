@@ -1,0 +1,2 @@
+ALU - MIPS (Million Instructions Per Second)	IPS - Instructions Per Second
+FPU - MFLOP(Million Floating Points Per Second)	FLOPS-Floating Points Per Second

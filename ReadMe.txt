@@ -1,5 +1,5 @@
 https://github.com/okovtun/SBU_021
-
+https://www.youtube.com/watch?v=DsfIh6T6JV8&list=PLeqyOOqxeiIPJ4Vo6t7InM_1vOvdnzByi&index=2
 
 2020-09-12 DATA TYPES
 TODO:

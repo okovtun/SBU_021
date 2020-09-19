@@ -1,0 +1,12 @@
+(cache)
+L1 cache - самый быстрый, но самый маленький
+L2 cache - кэш второго уровня;
+L3 cache - Advanced Smart Cache - общий для всех ядер процессора
+
+1. Регистры процессора;
+2. Layer 1 cache;
+3. Layer 2 cache;
+4. Layer 3 cache;
+5. RAM;
+6. SSD;
+7. HDD;
