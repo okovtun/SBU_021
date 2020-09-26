@@ -4,9 +4,13 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+#define PI 3.14
+
 //#define DATA_TYPES
 //#define NAMES
-#define TYPE_CONVERSIONS
+//#define TYPE_CONVERSIONS
+//#define CONSTANTS
+#define INIT
 
 void main()
 {
@@ -51,6 +55,26 @@ void main()
 	cout << money << endl;
 	int grn = money;
 	cout << grn << endl;
+#endif
+
+#if defined CONSTANTS
+	int speed = 0;
+	const int MAX_SPEED = 250;
+	cout << PI << endl;
+	cout << typeid(.5f).name() << endl;	//Числовая константа типа int
+	cout << .5 << endl;
+	//http://cplusplus.com/doc/tutorial/constants/
+
+	cout << "++sdfsdfsdfsdfs" << endl;
+	cout << typeid('+').name() << endl;
+	cout << sizeof('+') << endl;
+	cout << sizeof("+") << endl;
+	cout << sizeof "Hello" << endl;
+#endif
+	//Проинициализировать
+#if defined INIT
+	int a = 2;
+	cout << a << endl;
 #endif
 }
 
