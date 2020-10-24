@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1259
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ControlStructures", "ControlStructures\ControlStructures.vcxproj", "{0EF1ABA5-CA30-491F-9DBC-DD654DBCFCF1}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Loops", "Loops\Loops.vcxproj", "{A578F800-9518-432E-B421-61775BBEEC72}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FOR_LOOP", "FOR_LOOP\FOR_LOOP.vcxproj", "{2E004CF6-FB52-47A4-BF79-F6CEAB504AC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NestedFor", "NestedFor\NestedFor.vcxproj", "{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{2E004CF6-FB52-47A4-BF79-F6CEAB504AC6}.Release|x64.Build.0 = Release|x64
 		{2E004CF6-FB52-47A4-BF79-F6CEAB504AC6}.Release|x86.ActiveCfg = Release|Win32
 		{2E004CF6-FB52-47A4-BF79-F6CEAB504AC6}.Release|x86.Build.0 = Release|Win32
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Debug|x64.ActiveCfg = Debug|x64
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Debug|x64.Build.0 = Debug|x64
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Debug|x86.ActiveCfg = Debug|Win32
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Debug|x86.Build.0 = Debug|Win32
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Release|x64.ActiveCfg = Release|x64
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Release|x64.Build.0 = Release|x64
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Release|x86.ActiveCfg = Release|Win32
+		{B80FA124-7C22-4AE3-A8C3-196AE8C78E5A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
