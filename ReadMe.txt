@@ -1,6 +1,9 @@
 https://www.youtube.com/watch?v=DsfIh6T6JV8&list=PLeqyOOqxeiIPJ4Vo6t7InM_1vOvdnzByi&index=2
 https://github.com/okovtun/SBU_021
 
+2020-11-7 Arrays
+—делать циклический сдвиг массива, снача влево, потом вправо, на выбор пользовател€.
+
 2020-10-17 FOR_LOOP
 TODO:
 1. Ќаписать программу, котора€ вычисл€ет факториал числа, введенного с клавиатуры;

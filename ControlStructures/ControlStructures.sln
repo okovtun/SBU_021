@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HomeWork", "HomeWork\HomeWo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometria1", "Geometria1\Geometria1.vcxproj", "{7405BFB2-D0AF-4A59-8DA1-3AE6DD3E1995}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chess", "Chess\Chess.vcxproj", "{056FE67E-FA5D-42E5-8681-9E1696D326E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{7405BFB2-D0AF-4A59-8DA1-3AE6DD3E1995}.Release|x64.Build.0 = Release|x64
 		{7405BFB2-D0AF-4A59-8DA1-3AE6DD3E1995}.Release|x86.ActiveCfg = Release|Win32
 		{7405BFB2-D0AF-4A59-8DA1-3AE6DD3E1995}.Release|x86.Build.0 = Release|Win32
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Debug|x64.ActiveCfg = Debug|x64
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Debug|x64.Build.0 = Debug|x64
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Debug|x86.ActiveCfg = Debug|Win32
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Debug|x86.Build.0 = Debug|Win32
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Release|x64.ActiveCfg = Release|x64
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Release|x64.Build.0 = Release|x64
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Release|x86.ActiveCfg = Release|Win32
+		{056FE67E-FA5D-42E5-8681-9E1696D326E2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

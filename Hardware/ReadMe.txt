@@ -1,3 +1,14 @@
+https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/?s=1
+https://www.youtube.com/watch?v=5TUwyZiCBrw&t=1010s
+https://www.youtube.com/watch?v=1cwLPL8bUPs
+
+Cool:
+https://www.youtube.com/watch?v=A8KJwdVKTok&t=1s
+https://www.youtube.com/watch?v=mALfZmxyOQ4
+https://www.youtube.com/watch?v=1XUd7QgSb4A
+https://www.youtube.com/watch?v=ipcyfvGAb4E
+
+
 ƒл€ каждого типа микросхем пам€ти вы€снить, по какому техпроцессу они производ€тс€.
 
 –еб€т, всем привет!!!
