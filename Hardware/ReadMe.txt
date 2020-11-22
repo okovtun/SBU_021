@@ -1,3 +1,19 @@
+2020-11-21
+TOREAD:
+https://www.ixbt.com/video3/guide/guide-02.shtml - Ќеплоха€ стать€ о шинах расширени€
+
+2020-11-14
+TOREAD:
+https://www.ixbt.com/video3/guide.shtml - очень полезна€ стать€
+
+Video:
+https://www.youtube.com/watch?v=W0QlWFJ4wA4 - очень полезный видос. “ут про видеочипы, и про видеоплаты.
+https://www.youtube.com/watch?v=xUubxz18WZI
+https://www.youtube.com/watch?v=tcYOX089clw
+
+
+=============================================================
+
 https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/?s=1
 https://www.youtube.com/watch?v=5TUwyZiCBrw&t=1010s
 https://www.youtube.com/watch?v=1cwLPL8bUPs
