@@ -1,3 +1,7 @@
+2020-12-05
+TOREAD:
+https://rlab.ru/doc/hdd_from_inside.html
+
 2020-11-21
 TOREAD:
 https://www.ixbt.com/video3/guide/guide-02.shtml - Неплохая статья о шинах расширения
