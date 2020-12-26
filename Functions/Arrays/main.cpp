@@ -6,16 +6,21 @@ const int COLS = 5;
 
 void FillRand(int arr[], const int n);
 void FillRand(double arr[], const int n);
+void FillRand(char arr[], const int n);
 void FillRand(int arr[ROWS][COLS], const int m, const int n);
 void FillRand(double arr[ROWS][COLS], const int m, const int n);
+void FillRand(char arr[ROWS][COLS], const int m, const int n);
 
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
+void Print(char arr[], const int n);
 void Print(int arr[ROWS][COLS], const int m, const int n);
 void Print(double arr[ROWS][COLS], const int m, const int n);
+void Print(char arr[ROWS][COLS], const int m, const int n);
 
 void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
+void Sort(int arr[ROWS][COLS], const int m, const int n);
 
 int Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
@@ -73,7 +78,9 @@ void main()
 	cout << "Среднее арифметическое : " << Avg(arr2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(arr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(arr2, ROWS, COLS) << endl;
-
+	cout << "Отсортированный массив:\n";
+	Sort(arr2, ROWS, COLS);
+	Print(arr2, ROWS, COLS);
 	cout << "\n-----------------------------------------------------------------\n";
 
 	double brr2[ROWS][COLS];
@@ -83,6 +90,18 @@ void main()
 	cout << "Среднее арифметическое : " << Avg(brr2, ROWS, COLS) << endl;
 	cout << "Минимальное значение в массиве: " << minValueIn(brr2, ROWS, COLS) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(brr2, ROWS, COLS) << endl;
+
+	cout << "\n-----------------------------------------------------------------\n";
+
+	char crr[n];
+	FillRand(crr, n);
+	Print(crr, n);
+
+	cout << "\n-----------------------------------------------------------------\n";
+
+	char crr2[ROWS][COLS];
+	FillRand(crr2, ROWS, COLS);
+	Print(crr2, ROWS, COLS);
 }
 
 void FillRand(int arr[], const int n)
@@ -98,6 +117,13 @@ void FillRand(double arr[], const int n)
 	{
 		arr[i] = rand() % 10000;
 		arr[i] /= 100;
+	}
+}
+void FillRand(char arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand();
 	}
 }
 void FillRand(int arr[ROWS][COLS], const int m, const int n)
@@ -121,6 +147,16 @@ void FillRand(double arr[ROWS][COLS], const int m, const int n)
 		}
 	}
 }
+void FillRand(char arr[ROWS][COLS], const int m, const int n)
+{
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			arr[i][j] = rand();
+		}
+	}
+}
 
 
 void Print(int arr[], const int n)
@@ -132,6 +168,14 @@ void Print(int arr[], const int n)
 	cout << endl;
 }
 void Print(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << "\t";
+	}
+	cout << endl;
+}
+void Print(char arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
@@ -152,6 +196,19 @@ void Print(int arr[ROWS][COLS], const int m, const int n)
 }
 void Print(double arr[ROWS][COLS], const int m, const int n)
 {
+	int var;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			cout << arr[i][j] << "\t";
+		}
+		cout << endl;
+	}
+}
+void Print(char arr[ROWS][COLS], const int m, const int n)
+{
+	int var;
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -181,7 +238,7 @@ void Sort(double arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		for (int j = i+1; j < n; j++)
+		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[j] < arr[i])
 			{
@@ -192,7 +249,33 @@ void Sort(double arr[], const int n)
 		}
 	}
 }
-
+void Sort(int arr[ROWS][COLS], const int m, const int n)
+{
+	int iterations = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			for (int k = i; k < m; k++)
+			{
+				/*int l;
+				if (k == i)l = j + 1;
+				else l = 0;*/
+				for (int l = k == i ? j + 1 : 0; l < n; l++)
+				{
+					if (arr[k][l] < arr[i][j])
+					{
+						int buffer = arr[i][j];
+						arr[i][j] = arr[k][l];
+						arr[k][l] = buffer;
+					}
+					iterations++;
+				}
+			}
+		}
+	}
+	cout << "Количество итераций: " << iterations << endl;
+}
 int Sum(int arr[], const int n)
 {
 	int sum = 0;

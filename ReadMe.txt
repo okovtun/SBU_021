@@ -1,6 +1,10 @@
 https://www.youtube.com/watch?v=DsfIh6T6JV8&list=PLeqyOOqxeiIPJ4Vo6t7InM_1vOvdnzByi&index=2
 https://github.com/okovtun/SBU_021
 
+2020-12-19
+TODO:
+Шаблонизировать функции для работы с массивами, в отдельной ветке templated, и прислать ссылку на GitHub.
+
 2020-12-05
 TODO:
 Написать перегруженные функции для одномерного и двумерного массива типа int, double, char:

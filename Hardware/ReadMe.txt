@@ -1,3 +1,7 @@
+2020-12-12
+TOREAD:
+http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+
 2020-12-05
 TOREAD:
 https://rlab.ru/doc/hdd_from_inside.html
