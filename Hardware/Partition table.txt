@@ -1,0 +1,21 @@
+MBR - Master Boot Record (Главная Загрузочная Запись)
+Sector 	  1
+Track  	  0
+Cillinder 0
+1 Block - 512 Byte
+Bootsrap loader 446B
+Partition table  64B
+Magic number	  2B
+
+----------------------------------------------------------------
+
+1. char Active   - Флаг активности;
+2. char begin[3] - CHS первого (начального) сектора раздела;
+3. char type	 - тип раздела. Показывает тип ФС:
+				0x05 - CHS extended;
+				0x07 - NTFS;
+				0x0C - FAT-32 LBA;
+				0x0F - LBA extended;
+4. char end[3]	 - CHS последнего (конечного) сектора раздела;
+5. int start	 - LBA первого сектора раздела;
+6. int length	 - длинну (размер) раздела в секторах;
