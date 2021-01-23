@@ -4,50 +4,90 @@ using namespace std;
 void FillRand(int arr[], const int n);
 void Print(int arr[], const int n);
 
+int* push_back(int arr[], int& n, int value);	//ПРОТОТИП
+int* push_front(int arr[], int& n, int value);
+
+//#define DEBUG_ASSERTION_FAILED_1
+//#define DEBUG_ASSERTION_FAILED_2
+
 void main()
 {
 	setlocale(LC_ALL, "Russian");
 	int n;	//Размер массива
+#ifdef DEBUG_ASSERTION_FAILED_1
+	int* pn = &n;
+	delete[] pn;
+#endif // DEBUG_ASSERTION_FAILED_1
+
 	cout << "Введите размер массива: "; cin >> n;
-	int* arr = new int[n];	//Выделяем память под массив
-	
+	int* arr = new int[n] {3, 5, 8};
 	FillRand(arr, n);
 	Print(arr, n);
-	int value;
-	cout << "Введите добавляемое значение: "; cin >> value;
-	//1) Создаем буферный массив нужного зармера:
-	int* buffer = new int[n + 1];
-	//2) Копируем исходный массив в буферный:
-	for (int i = 0; i < n; i++)
-	{
-		buffer[i] = arr[i];
-	}
-	//3) Удаляем исходный массив:
-	delete[] arr;
-	//4) Подменяем исходный массив:
-	arr = buffer;
-	//5) Добавлем значение:
-	arr[n] = value;
-	//6) Увеличиваем размер массива:
-	n++;
 
+	int value;	//Добавляемое значение
+	cout << "Введите добавляемое значение: "; cin >> value;
+	arr = push_back(arr, n, value);	//ВЫЗОВ
 	Print(arr, n);
 	
-	delete[] arr;	//Освобождаем память, занимаемую массивом
+	cout << "Введите добавляемое значение: "; cin >> value;
+	arr = push_front(arr, n, value);
+	Print(arr, n);
+
+#ifdef DEBUG_ASSERTION_FAILED_2
+	delete[] buffer;
+#endif // DEBUG_ASSERTION_FAILED_2
+
+	delete[] arr;
 }
 
 void FillRand(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = rand()%100;
+		arr[i] = rand() % 100;
 	}
 }
 void Print(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		cout << arr[i] << "\t";
+		//cout << arr[i] << "\t";
+		cout << *(arr + i) << "\t";
 	}
 	cout << endl;
+}
+
+int* push_back(int arr[], int& n, int value)	//РЕАЛИЗАЦИЯ
+{
+	//1.создать буферный размер нужного размера(на 1 элемент больше)
+	int* buffer = new int[n + 1]{};
+	//2/копируем все значения в новый массив
+	for (int i = 0; i < n; i++)
+	{
+		buffer[i] = arr[i];
+	}
+	//3 удаляем исходный массив
+	delete[] arr;
+	//4.подменяем исходный маасив буферным
+	arr = buffer;
+	//5.добавляем значение в конец массива
+	arr[n] = value;
+	//6.после того как в массиве добавился элемент ,количество его элементов увеличивается на 1
+	n++;
+
+	return arr;
+}
+
+int* push_front(int arr[], int& n, int value)
+{
+	int* buffer = new int[n + 1]{};
+	for (int i = 0; i < n; i++)
+	{
+		buffer[i + 1] = arr[i];
+	}
+	delete[] arr;
+	arr = buffer;
+	arr[0] = value;
+	n++;
+	return arr;
 }
